@@ -869,6 +869,20 @@
             "rid": "win"
           }
         }
+      },
+      "WAD_CW_13127_API.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.27",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.27"
+        },
+        "compile": {
+          "bin/placeholder/WAD_CW_13127_API.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WAD_CW_13127_API.DAL.dll": {}
+        }
       }
     }
   },
@@ -2428,6 +2442,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "WAD_CW_13127_API.DAL/1.0.0": {
+      "type": "project",
+      "path": "../WAD_CW_13127_API.DAL/WAD_CW_13127_API.DAL.csproj",
+      "msbuildProject": "../WAD_CW_13127_API.DAL/WAD_CW_13127_API.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2435,7 +2454,8 @@
       "Microsoft.EntityFrameworkCore >= 6.0.27",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.27",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.27",
-      "Swashbuckle.AspNetCore >= 6.5.0"
+      "Swashbuckle.AspNetCore >= 6.5.0",
+      "WAD_CW_13127_API.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2470,7 +2490,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Users\\00013127\\source\\repos\\WAD_CW_13127_API\\WAD_CW_13127_API.DAL\\WAD_CW_13127_API.DAL.csproj": {
+              "projectPath": "E:\\Users\\00013127\\source\\repos\\WAD_CW_13127_API\\WAD_CW_13127_API.DAL\\WAD_CW_13127_API.DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

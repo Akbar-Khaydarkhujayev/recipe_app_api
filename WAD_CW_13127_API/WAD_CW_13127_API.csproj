@@ -20,4 +20,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WAD_CW_13127_API.DAL\WAD_CW_13127_API.DAL.csproj" />
+  </ItemGroup>
+
 </Project>

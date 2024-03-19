@@ -1,15 +1,23 @@
+using Microsoft.EntityFrameworkCore;
+using WAD_CW_13127_API.Data;
+using WAD_CW_13127_API.Models;
+using WAD_CW_13127_API.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<GeneralDBContext>(
+    o => o.UseSqlServer(
+        builder.Configuration.GetConnectionString("SqlServerConnection")));
+
+builder.Services.AddScoped<IRepository<Recipe>, RecipeRepository>();
+builder.Services.AddScoped<IRepository<Product>, ProductRepository>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

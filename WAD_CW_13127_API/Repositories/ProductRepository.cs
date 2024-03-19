@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WAD_CW_13127_API.Data;
 using WAD_CW_13127_API.Models;
 
 namespace WAD_CW_13127_API.Repositories
