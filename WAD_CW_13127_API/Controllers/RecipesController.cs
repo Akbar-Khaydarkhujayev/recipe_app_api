@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using WAD_CW_13127_API.Data;
+﻿using Microsoft.AspNetCore.Mvc;
 using WAD_CW_13127_API.Models;
+using WAD_CW_13127_API.Repositories;
 
 namespace WAD_CW_13127_API.Controllers
 {
@@ -14,111 +8,45 @@ namespace WAD_CW_13127_API.Controllers
     [ApiController]
     public class RecipesController : ControllerBase
     {
-        private readonly GeneralDBContext _context;
-
-        public RecipesController(GeneralDBContext context)
+        private readonly IRepository<Recipe> _repository;
+        public RecipesController(IRepository<Recipe> repository)
         {
-            _context = context;
+            _repository = repository;
         }
 
-        // GET: api/Recipes
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Recipe>>> GetRecipes()
+        public async Task<IEnumerable<Recipe>> GetRecipes()
         {
-          if (_context.Recipes == null)
-          {
-              return NotFound();
-          }
-            return await _context.Recipes.ToListAsync();
+            return await _repository.GetAllAsync();
         }
 
-        // GET: api/Recipes/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Recipe>> GetRecipe(int id)
         {
-          if (_context.Recipes == null)
-          {
-              return NotFound();
-          }
-            var recipe = await _context.Recipes.FindAsync(id);
-
-            if (recipe == null)
-            {
-                return NotFound();
-            }
-
-            return recipe;
+            var result = await _repository.GetByIDAsync(id);
+            return result == null ? NotFound() : Ok(result);
         }
 
-        // PUT: api/Recipes/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutRecipe(int id, Recipe recipe)
+        [HttpPut]
+        public async Task<IActionResult> PutRecipe(Recipe recipe)
         {
-            if (id != recipe.ID)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(recipe).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!RecipeExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _repository.UpdateAsync(recipe);
             return NoContent();
         }
 
-        // POST: api/Recipes
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
         public async Task<ActionResult<Recipe>> PostRecipe(Recipe recipe)
         {
-          if (_context.Recipes == null)
-          {
-              return Problem("Entity set 'GeneralDBContext.Recipes'  is null.");
-          }
-            _context.Recipes.Add(recipe);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetRecipe", new { id = recipe.ID }, recipe);
+            await _repository.AddAsync(recipe);
+            return Ok(recipe);
         }
 
         // DELETE: api/Recipes/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteRecipe(int id)
         {
-            if (_context.Recipes == null)
-            {
-                return NotFound();
-            }
-            var recipe = await _context.Recipes.FindAsync(id);
-            if (recipe == null)
-            {
-                return NotFound();
-            }
-
-            _context.Recipes.Remove(recipe);
-            await _context.SaveChangesAsync();
-
+            await _repository.DeleteAsync(id);
             return NoContent();
-        }
-
-        private bool RecipeExists(int id)
-        {
-            return (_context.Recipes?.Any(e => e.ID == id)).GetValueOrDefault();
         }
     }
 }
