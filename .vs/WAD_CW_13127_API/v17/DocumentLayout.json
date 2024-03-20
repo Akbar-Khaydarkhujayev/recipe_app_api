@@ -1,0 +1,116 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E392AD-935A-466C-AEA5-B23125FF604C}|WAD_CW_13127_API.DAL\\WAD_CW_13127_API.DAL.csproj|c:\\users\\u0057\\documents\\backend\\recipe_app_api\\wad_cw_13127_api.dal\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E392AD-935A-466C-AEA5-B23125FF604C}|WAD_CW_13127_API.DAL\\WAD_CW_13127_API.DAL.csproj|solutionrelative:wad_cw_13127_api.dal\\models\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|c:\\users\\u0057\\documents\\backend\\recipe_app_api\\wad_cw_13127_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|solutionrelative:wad_cw_13127_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|c:\\users\\u0057\\documents\\backend\\recipe_app_api\\wad_cw_13127_api\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|solutionrelative:wad_cw_13127_api\\controllers\\recipescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|c:\\users\\u0057\\documents\\backend\\recipe_app_api\\wad_cw_13127_api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|solutionrelative:wad_cw_13127_api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Users\\00013127\\source\\repos\\WAD_CW_13127_API\\WAD_CW_13127_API\\Data\\Mirations\\20240319063435_InitMiration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|c:\\users\\u0057\\documents\\backend\\recipe_app_api\\wad_cw_13127_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60AACCD0-596D-420E-A2E2-4F9DBA26E463}|WAD_CW_13127_API\\WAD_CW_13127_API.csproj|solutionrelative:wad_cw_13127_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API.DAL\\Models\\Recipe.cs",
+              "RelativeDocumentMoniker": "WAD_CW_13127_API.DAL\\Models\\Recipe.cs",
+              "ToolTip": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API.DAL\\Models\\Recipe.cs",
+              "RelativeToolTip": "WAD_CW_13127_API.DAL\\Models\\Recipe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T04:30:42.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecipesController.cs",
+              "DocumentMoniker": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Controllers\\RecipesController.cs",
+              "RelativeDocumentMoniker": "WAD_CW_13127_API\\Controllers\\RecipesController.cs",
+              "ToolTip": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Controllers\\RecipesController.cs",
+              "RelativeToolTip": "WAD_CW_13127_API\\Controllers\\RecipesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T02:53:10.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "WAD_CW_13127_API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "WAD_CW_13127_API\\Controllers\\ProductsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T02:53:11.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240319063435_InitMiration.cs",
+              "DocumentMoniker": "E:\\Users\\00013127\\source\\repos\\WAD_CW_13127_API\\WAD_CW_13127_API\\Data\\Mirations\\20240319063435_InitMiration.cs",
+              "ToolTip": "E:\\Users\\00013127\\source\\repos\\WAD_CW_13127_API\\WAD_CW_13127_API\\Data\\Mirations\\20240319063435_InitMiration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T06:34:35.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\appsettings.json",
+              "RelativeDocumentMoniker": "WAD_CW_13127_API\\appsettings.json",
+              "ToolTip": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\appsettings.json",
+              "RelativeToolTip": "WAD_CW_13127_API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-20T02:53:11.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Program.cs",
+              "RelativeDocumentMoniker": "WAD_CW_13127_API\\Program.cs",
+              "ToolTip": "C:\\Users\\U0057\\Documents\\backend\\recipe_app_api\\WAD_CW_13127_API\\Program.cs",
+              "RelativeToolTip": "WAD_CW_13127_API\\Program.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T02:53:11.014Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

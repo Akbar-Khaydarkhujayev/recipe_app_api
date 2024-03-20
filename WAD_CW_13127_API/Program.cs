@@ -2,8 +2,37 @@ using Microsoft.EntityFrameworkCore;
 using WAD_CW_13127_API.Data;
 using WAD_CW_13127_API.Models;
 using WAD_CW_13127_API.Repositories;
+var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
+
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+
+
+
+builder.Services.AddCors(options =>
+
+{
+
+    options.AddPolicy(MyAllowSpecificOrigins,
+
+               policy =>
+
+               {
+
+                   policy.WithOrigins("http://localhost:4200")
+
+                           .AllowAnyHeader()
+
+                           .AllowAnyMethod()
+
+                           .AllowAnyOrigin();
+
+               });
+
+});
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -24,7 +53,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthorization();
 
